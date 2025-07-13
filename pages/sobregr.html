@@ -12,14 +12,15 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <title>Proyecto simulados</title>
+    <title>GR Soluciones Digitales</title>
   </head>
   <body>
+    <!-- NAVEGACIÓN -->
     <header>
       <nav class="navbar navbar-expand-lg barra-navegacion">
         <div class="container-fluid">
           <!-- LOGO  -->
-          <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand logo-proyectos" href="./index.html">
             <img class="logo-proyectos" src="../assets/logo.png" alt="PA" />
           </a>
           <!-- BOTÓN MENÚ HAMBURGUESA -->
@@ -43,26 +44,24 @@
                 <a
                   class="nav-link link-menu active texto-menu"
                   href="../index.html"
-                  >Home</a
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item item-menu">
+                <a class="nav-link link-menu texto-menu" href="./servicios.html"
+                  >Servicios</a
                 >
               </li>
               <li class="nav-item item-menu">
                 <a
                   class="nav-link link-menu texto-menu"
-                  href="./proyectos-simulados.html"
-                  >Proyectos simulados</a
+                  href="./guias-gratuitas.html"
+                  >Guías gratuitas</a
                 >
               </li>
               <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./simula-tu-proyecto.html"
-                  >Simulá tu proyecto</a
-                >
-              </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link link-menu texto-menu" href="./preg-frec.html"
-                  >Preguntas frecuentes</a
+                <a class="nav-link link-menu texto-menu" href="./sobregr.html"
+                  >Sobre GR</a
                 >
               </li>
               <li class="nav-item item-menu">
@@ -74,209 +73,56 @@
           </div>
         </div>
       </nav>
-      <!-- HICE CON BOOTSTRAP -->
+      <!-- FIN DE LA NAV -->
     </header>
-    <main>
-      <section class="container-fluid">
-        <h1 class="text-center my-5">Simulá tu proyecto</h1>
-        <section class="container my-5">
-          <h2 class="text-center mb-4">Completá los datos del proyecto</h2>
-          <form
-            action="https://formsubmit.co/lolascheibengraf@gmail.com"
-            method="POST"
-            class="row g-3"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <div class="col-md-6">
-              <label for="dolar" class="form-label"
-                >Dólar actualizado al precio de hoy</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="dolar"
-                name="dolar"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="horizonte" class="form-label"
-                >Horizonte temporal de análisis</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="horizonte"
-                name="horizonte"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="rescate" class="form-label">Valor de rescate</label>
-              <input
-                type="text"
-                class="form-control"
-                id="rescate"
-                name="rescate"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="ganancias" class="form-label"
-                >Impuesto a las ganancias</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="ganancias"
-                name="ganancias"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="aportes" class="form-label">Aportes</label>
-              <input
-                type="text"
-                class="form-control"
-                id="aportes"
-                name="aportes"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="iibb" class="form-label"
-                >Ingresos Brutos (IIBB)</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="iibb"
-                name="iibb"
-                required
-              />
-            </div>
-            <!-- FLUJO DE CAJA -->
-            <div class="col-md-6">
-              <label for="costohundido" class="form-label">Costo hundido</label>
-              <input
-                type="text"
-                class="form-control"
-                id="costohundido"
-                name="costohundido"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="inversiónnotradi" class="form-label"
-                >Inversión no tradicional</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="inversiónnotradi"
-                name="inversiónnotradi"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="invactfijos" class="form-label"
-                >Inversión en activos fijos</label
-              >
-              <input
-                type="text"
-                class="form-control"
-                id="invactfijos"
-                name="invactfijos"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="ingresos" class="form-label">Ingresos</label>
-              <input
-                type="text"
-                class="form-control"
-                id="ingresos"
-                name="ingresos"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="costosfijos" class="form-label">Costos fijos</label>
-              <input
-                type="text"
-                class="form-control"
-                id="costosfijos"
-                name="costosfijos"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="costosvar" class="form-label">Costos variables</label>
-              <input
-                type="text"
-                class="form-control"
-                id="costosvar"
-                name="costosvar"
-                required
-              />
-            </div>
-            <div class="col-md-6">
-              <label for="correo" class="form-label">Correo electrónico</label>
-              <input
-                type="text"
-                class="form-control"
-                id="correo"
-                name="correo"
-                required
-              />
-            </div>
-            <!-- BOTÓN ENVIAR  -->
-            <div class="col-12 text-center">
-              <button type="submit" class="btn btn-mio">
-                Enviá tu simulación
-              </button>
-            </div>
-          </form>
-        </section>
-        <section class="container my-5">
-          <h2>Dudas sobre la información a rellenar</h2>
-          <ul>
-            <li>
-              Costo hundido: son los gastos que ya se realizaron antes de que
-              inicie el proyecto (como flete, aranceles o estudios previos)
-            </li>
-            <li>
-              Inversión no tradicional: incluye mejoras no convencionales como
-              infraestructura, corrales o herramientas específicas
-            </li>
-            <li>
-              Activos fijos: son inversiones duraderas como maquinaria o
-              instalaciones permanentes
-            </li>
-            <li>
-              Ingresos: estimación de lo que el proyecto va a generar (por
-              unidad, lote o periodo)
-            </li>
-            <li>
-              Costos fijos: gastos que no cambian mes a mes, como sueldos,
-              mantenimiento o alquiler
-            </li>
-            <li>
-              Costos variables: dependen del volumen de producción, como
-              alimento, medicamentos, agua o energía
-            </li>
-          </ul>
-        </section>
-        <section class="container my-5">
-          <div class="row text-center">
-            <div class="col-md-6 text-start">
-              <a href="../index.html">Inicio</a>
-            </div>
-            <div class="col-md-6 text-end">
-              <a href="./contacto.html">Contactanos</a>
-            </div>
-          </div>
-        </section>
+    <main class="container my-5">
+      <section class="text-center">
+        <h1 class="gr-title">Sobre GR Soluciones Digitales</h1>
+        <p class="gr-subtitle">
+          Somos un equipo apasionado por conectar tecnología, estrategia y
+          creatividad para que emprendedores, profesionales y negocios crezcan
+          con inteligencia digital.
+        </p>
+      </section>
+
+      <section class="row align-items-center my-5">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img
+            src="../assets/equipo.png"
+            alt="Equipo GR"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2>¿Quiénes somos?</h2>
+          <p>
+            GR nació con una visión clara: ayudar a las marcas a digitalizarse
+            sin complicaciones, sin tecnicismos innecesarios y con resultados
+            medibles. Trabajamos con herramientas actuales como inteligencia
+            artificial, automatizaciones y campañas online que convierten.
+          </p>
+          <p>
+            Ya acompañamos a más de <strong>100 emprendimientos</strong> en
+            Latinoamérica a potenciar su presencia digital, profesionalizar su
+            comunicación y generar ventas constantes con sistemas simples.
+          </p>
+        </div>
+      </section>
+
+      <section class="text-center my-5">
+        <h2>Nuestra filosofía</h2>
+        <p class="mx-auto" style="max-width: 700px">
+          Creemos en el poder de la educación, la automatización y el contenido
+          con propósito. No ofrecemos atajos, ofrecemos sistemas que crecen con
+          vos. Nuestra misión es que cada cliente entienda lo que está aplicando
+          y sienta que tiene el control de su estrategia.
+        </p>
+      </section>
+
+      <section class="text-center mt-5">
+        <a href="./contacto.html" class="btn btn-mio btn-lg"
+          >Conocé cómo podemos ayudarte</a
+        >
       </section>
     </main>
     <footer class="footer">

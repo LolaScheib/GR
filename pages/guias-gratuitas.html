@@ -12,14 +12,15 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css" />
-    <title>Preguntas frecuentes</title>
+    <title>GR Soluciones Digitales</title>
   </head>
   <body>
+    <!-- NAVEGACIÓN -->
     <header>
       <nav class="navbar navbar-expand-lg barra-navegacion">
         <div class="container-fluid">
           <!-- LOGO  -->
-          <a class="navbar-brand logo-proyectos" href="../index.html">
+          <a class="navbar-brand logo-proyectos" href="./index.html">
             <img class="logo-proyectos" src="../assets/logo.png" alt="PA" />
           </a>
           <!-- BOTÓN MENÚ HAMBURGUESA -->
@@ -43,26 +44,24 @@
                 <a
                   class="nav-link link-menu active texto-menu"
                   href="../index.html"
-                  >Home</a
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item item-menu">
+                <a class="nav-link link-menu texto-menu" href="./servicios.html"
+                  >Servicios</a
                 >
               </li>
               <li class="nav-item item-menu">
                 <a
                   class="nav-link link-menu texto-menu"
-                  href="./proyectos-simulados.html"
-                  >Proyectos simulados</a
+                  href="./guias-gratuitas.html"
+                  >Guías gratuitas</a
                 >
               </li>
               <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./simula-tu-proyecto.html"
-                  >Simulá tu proyecto</a
-                >
-              </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link link-menu texto-menu" href="./preg-frec.html"
-                  >Preguntas frecuentes</a
+                <a class="nav-link link-menu texto-menu" href="./sobregr.html"
+                  >Sobre GR</a
                 >
               </li>
               <li class="nav-item item-menu">
@@ -74,126 +73,53 @@
           </div>
         </div>
       </nav>
-      <!-- HICE CON BOOTSTRAP -->
+      <!-- FIN DE LA NAV -->
     </header>
-    <main>
-      <section class="container-fluid">
-        <h1>Preguntas frecuentes</h1>
-        <img
-          src="../assets/cosecha-atardecer-campo.jpg"
-          alt=""
-          class="img-pregfrec-1"
-        />
-        <div class="acordeon-preguntas" id="acordeonExample">
-          <div class="pregunta">
-            <h2 class="encabezado-pregunta" id="headingOne">
-              <button
-                class="boton-pregunta"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                ¿Por qué analizar un proyecto antes de invertir?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="respuesta collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#acordeonExample"
-            >
-              <div class="cuerpo-respuesta">
-                Evaluar un proyecto permite anticipar riesgos, medir
-                rentabilidad y tomar decisiones informadas. En el agro, donde
-                los ciclos productivos son largos y los recursos limitados, este
-                paso resulta fundamental para garantizar la sostenibilidad
-                económica y productiva. No se trata solo de estimar si una
-                inversión dará ganancias, sino de entender en qué condiciones,
-                con qué recursos y en qué plazos se puede lograr. Analizar un
-                proyecto también ayuda a identificar los puntos críticos de la
-                operación, prever escenarios adversos y definir estrategias de
-                mitigación. De esta forma, se mejora la planificación, se
-                optimiza el uso de los insumos, y se fortalece la toma de
-                decisiones con datos y proyecciones realistas.
-              </div>
-            </div>
-          </div>
-          <div class="pregunta">
-            <h2 class="encabezado-pregunta" id="headingTwo">
-              <button
-                class="boton-pregunta collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                ¿Qué indicadores clave debo tener en cuenta?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="respuesta collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#acordeonExample"
-            >
-              <div class="cuerpo-respuesta">
-                Rentabilidad esperada, nivel de riesgo y horizonte temporal son
-                los tres pilares principales para analizar si conviene invertir
-                en un proyecto. Estos factores forman el triángulo básico de
-                evaluación y permiten tener una visión clara del posible
-                desempeño de la inversión. La rentabilidad esperada indica
-                cuánto podrías ganar; el riesgo, qué tan probable es que algo
-                salga mal; y el horizonte temporal, cuánto tiempo vas a esperar
-                para ver resultados. Además, podés complementar este análisis
-                con indicadores financieros como el Valor Actual Neto (VAN), que
-                calcula cuánto vale hoy una inversión futura; la Tasa Interna de
-                Retorno (TIR), que mide la rentabilidad esperada del proyecto; y
-                el punto de equilibrio, que te muestra a partir de qué momento
-                tus ingresos cubrirán tus costos. Estos elementos ayudan a tomar
-                decisiones más sólidas y con menor incertidumbre
-              </div>
-            </div>
-          </div>
-          <div class="pregunta">
-            <h2 class="encabezado-pregunta" id="headingThree">
-              <button
-                class="boton-pregunta collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                ¿Dónde puedo aplicar estos conceptos?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="respuesta collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#acordeonExample"
-            >
-              <div class="cuerpo-respuesta">
-                En emprendimientos agrícolas, ganaderos, forestales o mixtos, la
-                evaluación de proyectos es clave para garantizar la
-                sostenibilidad y el éxito a largo plazo. Este análisis también
-                resulta fundamental en la toma de decisiones de inversión
-                familiar, donde muchas veces se destinan ahorros importantes, y
-                en organizaciones agroindustriales, que requieren eficiencia,
-                planificación estratégica y uso óptimo de recursos. Evaluar un
-                proyecto permite identificar oportunidades, prever escenarios y
-                alinear los objetivos productivos con la realidad del entorno
-                económico, climático y social. Además, facilita el acceso a
-                financiamiento, ya que demuestra que el emprendimiento está bien
-                fundamentado y tiene proyecciones claras. Preguntar a ChatGPT
-              </div>
-            </div>
-          </div>
+    <main class="container my-5">
+      <section class="text-center">
+        <h1 class="gr-title">Guía Gratuita: IA aplicada al Marketing</h1>
+        <p class="gr-subtitle">
+          Descargá gratis nuestra guía completa para aplicar inteligencia
+          artificial en tu estrategia digital y transformar tu forma de vender
+          online.
+        </p>
+      </section>
+
+      <section class="row justify-content-center mb-5">
+        <div class="col-md-8 text-center">
+          <img
+            src="../assets/guia-portada.jpg"
+            alt="Portada guía gratuita"
+            class="img-fluid rounded shadow-sm mb-4"
+            style="max-height: 420px; object-fit: cover"
+          />
+          <h2>¿Qué vas a encontrar en esta guía?</h2>
+          <ul
+            class="text-start mx-auto"
+            style="max-width: 700px; font-size: 17px; line-height: 1.8"
+          >
+            <li>
+              ✅ Herramientas de IA para redes sociales, contenido y diseño.
+            </li>
+            <li>
+              ✅ Cómo automatizar tareas repetitivas sin perder el toque humano.
+            </li>
+            <li>✅ Plataformas recomendadas para emprendedores y pymes.</li>
+            <li>✅ Ejemplos prácticos para aplicar de inmediato.</li>
+            <li>✅ Bonus: recomendaciones para empezar sin presupuesto.</li>
+          </ul>
         </div>
       </section>
+
+      <div class="text-center">
+        <a
+          href="https://www.ejemplo.com/guia-inteligencia-artificial.pdf"
+          target="_blank"
+          class="btn btn-mio btn-lg"
+        >
+          📥 Descargar la guía gratuita
+        </a>
+      </div>
     </main>
 
     <footer class="footer">
