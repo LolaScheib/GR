@@ -250,12 +250,12 @@ a:hover {
 
 .img-card-2 {
   width: 90px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  transform: scale(1.05); /* Le da presencia sin romper el layout */
+  height: 90px;
+  object-fit: contain; /* Esto evita deformaciones y mantiene proporción */
+  display: block;
+  margin: 0 auto 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-gr .img-card:hover {
