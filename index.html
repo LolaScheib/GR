@@ -11,94 +11,76 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg barra-navegacion">
-        <div class="container-fluid">
-          <a class="navbar-brand logo-proyectos" href="./index.html">
-            <img class="logo-proyectos" src="./assets/logo.png" alt="Logo GR" />
-          </a>
-          <button
-            class="navbar-toggler boton-menu-movil"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-          >
-            <span class="icono-hamburguesa"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse contenido-navegacion"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav navbar-nav-ul me-auto mb-2 mb-lg-0">
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu active texto-menu"
-                  href="./index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./pages/servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./pages/guias-gratuitas.html"
-                  >Guías gratuitas</a
-                >
-              </li>
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./pages/sobregr.html"
-                  >Sobre GR</a
-                >
-              </li>
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./pages/contacto.html"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
+    <!-- NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/logo.png" alt="Logo GR" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/guias-gratuitas.html"
+                >Guías gratuitas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/sobregr.html">Sobre GR</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <main class="gr-main">
-      <!-- HERO CON IMAGEN DE FONDO -->
-      <section class="hero-img-banner text-light text-start">
-        <div class="hero-img-content container">
-          <h1 class="gr-title">
-            Impulsamos tu negocio con inteligencia digital
-          </h1>
-          <p class="gr-subtitle">
-            Automatizamos procesos, optimizamos tu estrategia y potenciamos tus
-            ventas con soluciones inteligentes adaptadas a tu negocio.
-          </p>
-          <a href="./pages/formulario.html" class="btn btn-success gr-cta-btn"
-            >Descargá la guía gratuita</a
-          >
-        </div>
-      </section>
+    <!-- HERO CON IMAGEN DE FONDO -->
+    <section class="hero-img-banner">
+      <div class="container hero-img-content">
+        <h1>
+          Impulsamos tu negocio con <br />
+          <span class="text-primary">inteligencia digital</span>
+        </h1>
+        <p>
+          Automatizamos procesos, optimizamos tu estrategia y potenciamos tus
+          ventas con soluciones inteligentes adaptadas a tu negocio.
+        </p>
+        <a href="./pages/formulario.html" class="gr-cta-btn">
+          Descargá la guía gratuita
+        </a>
+      </div>
+    </section>
 
-      <!-- QUIÉNES SOMOS -->
-      <section class="container py-5">
+    <!-- QUIÉNES SOMOS -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center text-primary mb-4">¿Quiénes somos?</h2>
         <div class="row justify-content-center">
           <div class="col-lg-10">
-            <h2 class="gr-section-title text-center mb-4">¿Quiénes somos?</h2>
-            <p class="text-center text-md-start">
+            <p>
               GR nació con una visión clara: ayudar a las marcas a digitalizarse
               sin complicaciones, sin tecnicismos innecesarios y con resultados
               medibles.
             </p>
-            <p class="text-center text-md-start">
+            <p>
               Trabajamos con herramientas actuales como inteligencia artificial,
               automatizaciones y campañas online que convierten. Ya acompañamos
               a más de <strong>100 emprendimientos</strong> en Latinoamérica a
@@ -107,53 +89,54 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- FILOSOFÍA DE TRABAJO -->
-      <section class="bg-light py-5">
-        <div class="container">
-          <h2 class="text-center gr-section-title mb-4">
-            Nuestra filosofía de trabajo
-          </h2>
-          <p class="text-center text-muted mx-auto" style="max-width: 750px">
-            En GR Soluciones Digitales combinamos estrategia, automatización e
-            inteligencia artificial para transformar negocios reales en sistemas
-            digitales eficientes, escalables y medibles.
-          </p>
-
-          <div class="row text-center mt-5">
-            <div class="col-md-4 mb-4">
-              <h5>🔍 Diagnóstico estratégico</h5>
-              <p>
-                Analizamos tu situación y definimos el camino ideal según tu
-                negocio, presupuesto y mercado.
-              </p>
-            </div>
-            <div class="col-md-4 mb-4">
-              <h5>⚙️ Automatización inteligente</h5>
-              <p>
-                Integramos herramientas digitales para ahorrar tiempo, captar
-                más leads y aumentar conversiones.
-              </p>
-            </div>
-            <div class="col-md-4 mb-4">
-              <h5>📊 Optimización continua</h5>
-              <p>
-                Medimos, ajustamos y evolucionamos tu ecosistema digital mes a
-                mes para obtener mejores resultados.
-              </p>
-            </div>
+    <!-- FILOSOFÍA DE TRABAJO -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center text-primary mb-4">
+          Nuestra filosofía de trabajo
+        </h2>
+        <p class="text-center text-muted mx-auto" style="max-width: 750px">
+          En GR Soluciones Digitales combinamos estrategia, automatización e
+          inteligencia artificial para transformar negocios reales en sistemas
+          digitales eficientes, escalables y medibles.
+        </p>
+        <div class="row text-center mt-5">
+          <div class="col-md-4 mb-4">
+            <h5>🔍 Diagnóstico estratégico</h5>
+            <p>
+              Analizamos tu situación y definimos el camino ideal según tu
+              negocio, presupuesto y mercado.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>⚙️ Automatización inteligente</h5>
+            <p>
+              Integramos herramientas digitales para ahorrar tiempo, captar más
+              leads y aumentar conversiones.
+            </p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>📊 Optimización continua</h5>
+            <p>
+              Medimos, ajustamos y evolucionamos tu ecosistema digital mes a mes
+              para obtener mejores resultados.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- BENEFICIOS -->
-      <section class="container py-5">
-        <h2 class="text-center gr-section-title mb-4">
+    <!-- BENEFICIOS -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center text-primary mb-4">
           Beneficios de trabajar con GR
         </h2>
         <ul
-          class="list-group list-group-flush text-center mx-auto"
+          class="list-group list-group-flush mx-auto"
           style="max-width: 650px"
         >
           <li class="list-group-item">
@@ -169,13 +152,16 @@
             ✅ Acceso a guías, recursos y acompañamiento constante
           </li>
         </ul>
-      </section>
-    </main>
+      </div>
+    </section>
 
-    <footer class="footer">
-      <img src="./assets/logo.png" alt="Logo GR" class="footer-logo" />
-      <p class="footer-copy">GR Soluciones Digitales</p>
-      <p class="footer-copy">Todos los derechos reservados © 2025</p>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-4">
+      <div class="container">
+        <img src="./assets/logo.png" alt="Logo GR" height="40" class="mb-2" />
+        <p class="mb-0">GR Soluciones Digitales</p>
+        <small>Todos los derechos reservados © 2025</small>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
