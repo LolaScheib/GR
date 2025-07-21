@@ -20,6 +20,7 @@ body {
 /* ================================
    TIPOGRAFÍA
 =================================== */
+
 h1,
 h2,
 h3,
@@ -35,7 +36,7 @@ h1 {
   font-size: 3rem;
   font-weight: 800;
   line-height: 1.2;
-  margin: 60px 0 20px;
+  margin: 0 0 20px;
   position: relative;
   animation: fadeUp 1s ease forwards;
 }
@@ -251,4 +252,24 @@ a:hover {
 .card-gr .img-card:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Animación al cargar o entrar en vista de la portada de Guia Gratuita */
+.float-up-on-load {
+  opacity: 0;
+  transform: translateY(50px) scale(0.98);
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+  will-change: transform, opacity;
+}
+
+/* Clase que se activa cuando entra en vista */
+.float-up-on-load.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover: realce profesional */
+.float-up-on-load:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
