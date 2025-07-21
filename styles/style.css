@@ -18,9 +18,120 @@ body {
 }
 
 /* ================================
-   TIPOGRAFÍA
+   HERO CON IMAGEN DE FONDO
 =================================== */
+.hero-img-banner {
+  background-image: url("../assets/portada-index.png");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+  color: white;
+}
 
+.hero-img-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.95) 45%,
+    rgba(0, 0, 0, 0.1)
+  );
+  z-index: 1;
+}
+
+.hero-img-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px; /* más ancho para que el texto respire */
+  margin-left: 6%;
+  padding-right: 4%;
+  text-align: left;
+}
+
+.hero-img-content h1 {
+  font-size: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-bottom: 32px; /* más aire con el subtítulo */
+  color: #ffffff;
+}
+
+.hero-img-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e5e5e5;
+  margin-bottom: 40px; /* más espacio antes del botón */
+  max-width: auto; /* que ocupe todo el ancho disponible */
+  text-align: center;
+}
+
+.hero-img-content .gr-cta-btn {
+  background-color: #1ec58c;
+  border: none;
+  padding: 14px 28px;
+  margin-left: 35%;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  color: #000000;
+}
+
+.hero-img-content .gr-cta-btn:hover {
+  background-color: #17a374;
+  color: white;
+}
+
+/* ================================
+   LOGO HEADER
+=================================== */
+.logo-proyectos {
+  height: 70px;
+  max-width: 180px;
+  object-fit: contain;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.logo-proyectos:hover {
+  transform: scale(1.05);
+}
+
+/* ================================
+   NAVBAR
+=================================== */
+.barra-navegacion {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #dee2e6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+}
+
+.texto-menu {
+  font-family: "Open Sans", sans-serif;
+  color: #1e2a38;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.texto-menu:hover,
+.texto-menu:focus,
+.nav-link.active {
+  color: #127457;
+  text-decoration: underline;
+}
+
+/* ================================
+   TITULOS Y TEXTOS
+=================================== */
 h1,
 h2,
 h3,
@@ -69,23 +180,6 @@ h4 {
   font-weight: 600;
 }
 
-/* ================================
-   ANIMACIONES
-=================================== */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ================================
-   TEXTOS Y ENLACES
-=================================== */
 p {
   font-size: 17px;
   color: #3b3b3b;
@@ -101,10 +195,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/* =*
-
 /* ================================
-   FOOTER COMPLETO Y PROFESIONAL
+   FOOTER
 =================================== */
 .footer {
   width: 100%;
@@ -145,98 +237,8 @@ a:hover {
 }
 
 /* ================================
-   HEADER Y NAVBAR
+   TARJETAS DE SERVICIOS
 =================================== */
-
-.barra-navegacion {
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #dee2e6;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
-  z-index: 1000;
-  position: sticky;
-  top: 0;
-}
-
-.navbar-brand {
-  margin-right: 2rem;
-}
-
-.logo-proyectos {
-  height: 70px;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.2s ease;
-}
-
-.logo-proyectos:hover {
-  transform: scale(1.05);
-}
-
-.contenido-navegacion {
-  justify-content: flex-end;
-}
-
-.navbar-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  width: 100%;
-}
-
-.nav-item {
-  list-style: none;
-}
-
-.texto-menu {
-  font-family: "Open Sans", sans-serif;
-  color: #1e2a38;
-  font-size: 16px;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
-  transition: color 0.3s ease;
-}
-
-.texto-menu:hover,
-.texto-menu:focus,
-.nav-link.active {
-  color: #127457;
-  text-decoration: underline;
-}
-
-.boton-menu-movil {
-  border: none;
-  outline: none;
-}
-
-.icono-hamburguesa {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 80' width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100' height='10' fill='%23127457'/%3E%3Crect y='30' width='100' height='10' fill='%23127457'/%3E%3Crect y='60' width='100' height='10' fill='%23127457'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-}
-
-.gr-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
-  color: #127457;
-  line-height: 1.2;
-  margin-bottom: 1.5rem; /* menor espacio abajo */
-  animation: fadeUp 1s ease-out;
-}
-
-.gr-subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.15rem;
-  color: #333;
-  max-width: 750px;
-  margin: 2rem auto 2.5rem; /* más separación arriba y abajo */
-  line-height: 1.8;
-}
-
 .img-card {
   display: block;
   max-width: 100%;
@@ -254,22 +256,16 @@ a:hover {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
 }
 
-/* Animación al cargar o entrar en vista de la portada de Guia Gratuita */
-.float-up-on-load {
-  opacity: 0;
-  transform: translateY(50px) scale(0.98);
-  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
-  will-change: transform, opacity;
-}
-
-/* Clase que se activa cuando entra en vista */
-.float-up-on-load.in-view {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
-
-/* Hover: realce profesional */
-.float-up-on-load:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+/* ================================
+   ANIMACIONES
+=================================== */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
