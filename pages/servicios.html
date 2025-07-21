@@ -3,61 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GR Soluciones Digitales - Servicios</title>
+    <title>Servicios - GR Soluciones Digitales</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
 
   <body>
-    <!-- NAV -->
+    <!-- HEADER -->
     <header>
       <nav class="navbar navbar-expand-lg barra-navegacion">
         <div class="container-fluid">
-          <a class="navbar-brand logo-proyectos" href="../index.html">
+          <a class="navbar-brand" href="../index.html">
             <img
-              class="logo-proyectos"
               src="../assets/logo.png"
               alt="Logo GR"
+              class="logo-proyectos"
             />
           </a>
           <button
-            class="navbar-toggler boton-menu-movil"
+            class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
+            data-bs-target="#navbarNav"
           >
-            <span class="icono-hamburguesa"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse contenido-navegacion"
-            id="navbarSupportedContent"
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
           >
-            <ul class="navbar-nav navbar-nav-ul me-auto mb-2 mb-lg-0">
-              <li class="nav-item item-menu">
-                <a class="nav-link texto-menu" href="../index.html">Inicio</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
               </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link texto-menu active" href="./servicios.html"
-                  >Servicios</a
-                >
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Servicios</a>
               </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link texto-menu" href="./guias-gratuitas.html"
+              <li class="nav-item">
+                <a class="nav-link" href="./guias-gratuitas.html"
                   >Guías gratuitas</a
                 >
               </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link texto-menu" href="./sobregr.html"
-                  >Sobre GR</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="./sobregr.html">Sobre GR</a>
               </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link texto-menu" href="./contacto.html"
-                  >Contacto</a
-                >
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -67,133 +65,140 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container py-5">
-      <h1 class="text-center gr-title mb-4">
-        Servicios que impulsan tu negocio
-      </h1>
-      <p class="text-center gr-subtitle mb-5">
-        En GR Soluciones Digitales combinamos marketing, automatización y
-        estrategia para que tu negocio crezca inteligentemente.
-      </p>
+      <h2 class="text-center mb-5 text-primary fw-bold">Nuestros Servicios</h2>
 
-      <section class="row g-4 justify-content-center">
-        <!-- SERVICIO 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="servicio-card text-center p-4">
-            <img
-              src="../assets/branding.jpg"
-              alt="Branding"
-              class="servicio-img mb-4"
-            />
-            <h5 class="mb-3 text-primary">Branding e identidad visual</h5>
-            <p>
-              Kit de marca, manual de marca, presentación profesional y kit
-              cliente.
-            </p>
+      <div
+        id="serviciosCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="false"
+      >
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="card servicio-card text-center p-4">
+              <img
+                src="../assets/branding.jpg"
+                alt="Branding"
+                class="servicio-slide-img mb-3"
+              />
+              <h5 class="fw-bold">Branding e identidad visual</h5>
+              <p>
+                Kit de marca, manual de marca, presentación profesional y kit
+                cliente.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="card servicio-card text-center p-4">
+              <img
+                src="../assets/contenido-redes.jpg"
+                alt="Redes Sociales"
+                class="servicio-slide-img mb-3"
+              />
+              <h5 class="fw-bold">Contenido para redes sociales</h5>
+              <p>
+                Pack semanal, gestión mensual de redes y diseño de plantillas.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="card servicio-card text-center p-4">
+              <img
+                src="../assets/automatizacioooon.jfif"
+                alt="Automatización"
+                class="servicio-slide-img mb-3"
+              />
+              <h5 class="fw-bold">Automatización y embudos digitales</h5>
+              <p>
+                Email marketing, landing page, guías y embudos de captación.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="carousel-item">
+            <div class="card servicio-card text-center p-4">
+              <img
+                src="../assets/consultoriaaa.jfif"
+                alt="Consultoría"
+                class="servicio-slide-img mb-3"
+              />
+              <h5 class="fw-bold">Asesoramiento estratégico y consultoría</h5>
+              <p>
+                Sesión 1 a 1, plan de marketing personalizado y mentoría
+                mensual.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="carousel-item">
+            <div class="card servicio-card text-center p-4">
+              <img
+                src="../assets/presentaciones.jfif"
+                alt="Presentaciones"
+                class="servicio-slide-img mb-3"
+              />
+              <h5 class="fw-bold">Presentaciones profesionales</h5>
+              <p>
+                Pitch decks, propuestas comerciales y presentaciones visuales de
+                alto impacto.
+              </p>
+            </div>
+          </div>
+
+          <!-- Slide 6 -->
+          <div class="carousel-item">
+            <div class="card servicio-card text-center p-4">
+              <img
+                src="../assets/estudio-de-mercado.jfif"
+                alt="SEO"
+                class="servicio-slide-img mb-3"
+              />
+              <h5 class="fw-bold">Estudio de mercado y SEO</h5>
+              <p>
+                Análisis de competencia, mapa de clientes, insights clave, SEO y
+                optimización web.
+              </p>
+            </div>
           </div>
         </div>
 
-        <!-- SERVICIO 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="servicio-card text-center p-4">
-            <img
-              src="../assets/contenido-redes.jpg"
-              alt="Redes Sociales"
-              class="servicio-img mb-4"
-            />
-            <h5 class="mb-3 text-primary">Contenido para redes sociales</h5>
-            <p>
-              Pack semanal, gestión mensual de redes y diseño de plantillas
-              personalizadas.
-            </p>
-          </div>
-        </div>
-
-        <!-- SERVICIO 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="servicio-card text-center p-4">
-            <img
-              src="../assets/automatizacioooon.jfif"
-              alt="Automatización"
-              class="servicio-img mb-4"
-            />
-            <h5 class="mb-3 text-primary">
-              Automatización y embudos digitales
-            </h5>
-            <p>
-              Email marketing, landing page, guías descargables y embudos de
-              captación.
-            </p>
-          </div>
-        </div>
-
-        <!-- SERVICIO 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="servicio-card text-center p-4">
-            <img
-              src="../assets/consultoriaaa.jfif"
-              alt="Consultoría"
-              class="servicio-img mb-4"
-            />
-            <h5 class="mb-3 text-primary">
-              Asesoramiento estratégico y consultoría
-            </h5>
-            <p>
-              Sesión 1 a 1, plan de marketing personalizado y mentoría mensual.
-            </p>
-          </div>
-        </div>
-
-        <!-- SERVICIO 5 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="servicio-card text-center p-4">
-            <img
-              src="../assets/presentaciones.jfif"
-              alt="Presentaciones"
-              class="servicio-img mb-4"
-            />
-            <h5 class="mb-3 text-primary">
-              Diseño de presentaciones profesionales
-            </h5>
-            <p>
-              Pitch decks, propuestas comerciales y presentaciones visuales de
-              alto impacto.
-            </p>
-          </div>
-        </div>
-
-        <!-- SERVICIO 6 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="servicio-card text-center p-4">
-            <img
-              src="../assets/estudio-de-mercado.jfif"
-              alt="SEO y mercado"
-              class="servicio-img mb-4"
-            />
-            <h5 class="mb-3 text-primary">Estudio de mercado y SEO</h5>
-            <p>
-              Análisis de competencia, mapa de clientes, insights clave, SEO y
-              optimización web.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA FINAL -->
-      <div class="text-center mt-5">
-        <a href="./contacto.html" class="btn btn-mio btn-lg"
-          >Quiero una asesoría gratuita</a
+        <!-- BOTONES DEL CARRUSEL -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#serviciosCarousel"
+          data-bs-slide="prev"
         >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#serviciosCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
       </div>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer mt-5">
+    <footer class="footer">
       <img src="../assets/logo.png" alt="Logo GR" class="footer-logo" />
       <p class="footer-copy">GR Soluciones Digitales</p>
       <p class="footer-copy">Todos los derechos reservados © 2025</p>
     </footer>
 
-    <!-- BOOTSTRAP JS -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
