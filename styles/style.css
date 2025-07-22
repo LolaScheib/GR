@@ -3,11 +3,13 @@
 /* ================================
    RESET Y BASE
 =================================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f8f9fa;
@@ -19,6 +21,7 @@ body {
 /* ================================
    TIPOGRAFÍA GENERAL
 =================================== */
+
 h1,
 h2,
 h3,
@@ -29,6 +32,7 @@ h5 {
   color: #005b96;
   font-weight: 600;
 }
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -38,6 +42,7 @@ h1 {
   position: relative;
   animation: fadeUp 1s ease forwards;
 }
+
 h1::before {
   content: "";
   position: absolute;
@@ -50,27 +55,33 @@ h1::before {
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 91, 150, 0.2);
 }
+
 h2 {
   font-size: 28px;
   margin: 30px 0 15px;
 }
+
 h3 {
   font-size: 22px;
   margin-top: 40px;
 }
+
 h4 {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
 p {
   font-size: 17px;
   color: #3b3b3b;
 }
+
 a {
   color: #005b96;
   font-weight: 600;
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: underline;
 }
@@ -78,6 +89,7 @@ a:hover {
 /* ================================
    NAVBAR
 =================================== */
+
 .barra-navegacion {
   background-color: #ffffff;
   padding: 1rem 2rem;
@@ -87,6 +99,7 @@ a:hover {
   position: sticky;
   top: 0;
 }
+
 @media (min-width: 992px) {
   .barra-navegacion .container {
     display: flex;
@@ -99,6 +112,7 @@ a:hover {
     left: 2rem;
   }
 }
+
 .navbar-nav {
   display: flex;
   gap: 1.5rem;
@@ -106,6 +120,7 @@ a:hover {
   align-items: center;
   margin: 0 auto;
 }
+
 .nav-link,
 .texto-menu {
   font-family: "Open Sans", sans-serif;
@@ -115,6 +130,7 @@ a:hover {
   padding: 0.5rem 1rem;
   transition: color 0.3s ease;
 }
+
 .nav-link:hover,
 .nav-link:focus,
 .nav-link.active,
@@ -126,6 +142,7 @@ a:hover {
 /* ================================
    LOGO
 =================================== */
+
 .logo-proyectos {
   height: 70px;
   max-width: 180px;
@@ -133,6 +150,7 @@ a:hover {
   border-radius: 6px;
   transition: transform 0.2s ease;
 }
+
 .logo-proyectos:hover {
   transform: scale(1.05);
 }
@@ -140,16 +158,18 @@ a:hover {
 /* ================================
    HERO
 =================================== */
+
 .hero-img-banner {
   background-image: url("../assets/portada-index.png");
   background-size: cover;
-  background-position: center right;
+  background-position: center center;
   background-repeat: no-repeat;
   padding: 100px 0;
   position: relative;
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
   min-height: 100vh;
 }
 .hero-img-banner::before {
@@ -163,6 +183,7 @@ a:hover {
   );
   z-index: 1;
 }
+
 .hero-img-content {
   position: relative;
   z-index: 2;
@@ -171,6 +192,7 @@ a:hover {
   padding-right: 4%;
   text-align: left;
 }
+
 .hero-img-content h1 {
   font-size: 2.8rem;
   font-family: "Montserrat", sans-serif;
@@ -179,6 +201,7 @@ a:hover {
   color: #ffffff;
   line-height: 1.3;
 }
+
 .hero-img-content p {
   font-size: 1.15rem;
   line-height: 1.8;
@@ -187,6 +210,7 @@ a:hover {
   max-width: 600px;
   text-align: left;
 }
+
 .hero-img-content .gr-cta-btn {
   background-color: #005b96;
   border: none;
@@ -197,6 +221,7 @@ a:hover {
   transition: all 0.3s ease;
   color: #ffffff;
 }
+
 .hero-img-content .gr-cta-btn:hover {
   background-color: #00467a;
 }
@@ -204,26 +229,33 @@ a:hover {
 /* ================================
    CARRUSEL DE SERVICIOS
 =================================== */
+
 .carousel-item {
   position: relative;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
+
 .carousel-item img.slide-img {
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  /* <-- ancho total de la ventana */
+  height: 400px;
+  /* o el alto que quieras */
   object-fit: cover;
 }
+
 @media (max-width: 768px) {
   .carousel-item img.slide-img {
     height: 300px;
   }
 }
+
 .carousel-item .overlay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
+
 .carousel-caption {
   z-index: 2;
   position: absolute;
@@ -234,19 +266,23 @@ a:hover {
   text-align: center;
   padding: 1rem 2rem;
 }
+
 .carousel-caption h5,
 .carousel-caption p {
   color: #ffffff;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
+
 .carousel-caption h5 {
   font-size: 1.5rem;
   font-weight: 700;
 }
+
 .carousel-caption p {
   font-size: 1rem;
   margin-top: 0.5rem;
 }
+
 @media (max-width: 768px) {
   .carousel-caption {
     bottom: 12%;
@@ -259,6 +295,7 @@ a:hover {
     font-size: 0.9rem;
   }
 }
+
 @media (max-width: 480px) {
   .carousel-caption {
     bottom: 15%;
@@ -270,12 +307,14 @@ a:hover {
     font-size: 0.85rem;
   }
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 91, 150, 0.8);
   border-radius: 50%;
   padding: 20px;
 }
+
 .carousel-control-prev,
 .carousel-control-next {
   width: 5%;
@@ -284,6 +323,7 @@ a:hover {
 /* ================================
    FOOTER
 =================================== */
+
 .footer {
   width: 100%;
   background-color: #f8f9fa;
@@ -297,6 +337,7 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
 }
+
 .footer-logo {
   width: 140px;
   height: auto;
@@ -304,9 +345,11 @@ a:hover {
   opacity: 0.95;
   transition: opacity 0.3s ease;
 }
+
 .footer-logo:hover {
   opacity: 1;
 }
+
 .footer-copy {
   font-size: 0.9rem;
   color: #6c757d;
@@ -314,6 +357,7 @@ a:hover {
   margin: 0;
   transition: color 0.3s ease;
 }
+
 .footer-copy:hover {
   color: #005b96;
 }
@@ -321,6 +365,7 @@ a:hover {
 /* ================================
    ANIMACIONES
 =================================== */
+
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -335,6 +380,7 @@ a:hover {
 /* ================================
    RESPONSIVE: TÍTULOS H1 EN MOBILE
 =================================== */
+
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -342,6 +388,7 @@ a:hover {
     margin-bottom: 1rem;
   }
 }
+
 @media (max-width: 480px) {
   h1 {
     font-size: 1.7rem;
