@@ -346,3 +346,29 @@ a:hover {
     height: 300px; /* antes estaba en 200px */
   }
 }
+
+/* ================================
+   CARRUSEL: CAPA OSCURA SOBRE IMAGEN
+=================================== */
+.carousel-item .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.35
+  ); /* Ajustá el 0.35 según lo oscuro que querés */
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2; /* Asegura que el texto esté encima de la capa */
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 1rem 2rem;
+}
