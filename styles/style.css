@@ -257,7 +257,13 @@ a:hover {
   }
 }
 .carousel-caption {
-  bottom: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo más ancho y oscuro */
+  text-align: center;
+  border-radius: 0; /* Sin borde redondeado para ocupar todo */
 }
 .carousel-caption h5 {
   font-size: 1.25rem;
