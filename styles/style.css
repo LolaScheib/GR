@@ -240,7 +240,7 @@ a:hover {
 }
 
 /* ================================
-   CARRUSEL DE SERVICIOS CON SLIDE ENTERO
+   CARRUSEL DE SERVICIOS RESPONSIVE
 =================================== */
 .carousel-item {
   position: relative;
@@ -257,22 +257,46 @@ a:hover {
   }
 }
 .carousel-caption {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.6); /* Fondo más ancho y oscuro */
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  border-radius: 0; /* Sin borde redondeado para ocupar todo */
+  padding: 1rem 2rem;
+  position: absolute;
+  width: 100%;
+}
+.carousel-caption h5,
+.carousel-caption p {
+  color: #ffffff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.75);
 }
 .carousel-caption h5 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  color: #ffffff;
 }
 .carousel-caption p {
   font-size: 1rem;
-  color: #e0e0e0;
+  margin-top: 0.5rem;
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    bottom: 8%;
+    padding: 0.5rem 1rem;
+  }
+  .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -297,17 +321,4 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.carousel-caption {
-  bottom: 15%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  padding: 1rem 2rem;
-}
-
-.carousel-caption h5,
-.carousel-caption p {
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
