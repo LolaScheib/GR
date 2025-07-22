@@ -298,3 +298,16 @@ a:hover {
     transform: translateY(0);
   }
 }
+
+.carousel-caption {
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
