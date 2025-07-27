@@ -12,7 +12,7 @@
 .body {
   font-family: "Open Sans", sans-serif;
   background-color: #212529;
-  color: #1e2a38;
+  color: #212529;
   line-height: 1.7;
   text-align: justify;
 }
@@ -27,7 +27,7 @@ h4,
 h5 {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #005b96;
+  color: #073a5c;
   font-weight: 600;
 }
 
@@ -89,7 +89,7 @@ a:hover {
 =================================== */
 .barra-navegacion {
   background-color: #212529 !important;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-bottom: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   z-index: 1000;
@@ -97,17 +97,73 @@ a:hover {
   top: 0;
 }
 
-@media (min-width: 992px) {
-  .barra-navegacion .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-  }
-  .navbar-brand {
-    position: absolute;
-    left: 2rem;
-  }
+.barra-navegacion .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-proyectos {
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.logo-proyectos-footer {
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  margin: 0 auto;
+}
+
+.logo-proyectos:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* ÍCONO DE MENÚ HAMBURGUESA PERSONALIZADO */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.custom-menu-icon {
+  width: 26px;
+  height: 2px;
+  background-color: white;
+  display: block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-menu-icon::before,
+.custom-menu-icon::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-menu-icon::before {
+  top: -8px;
+}
+
+.custom-menu-icon::after {
+  top: 8px;
 }
 
 .navbar-nav {
@@ -121,7 +177,7 @@ a:hover {
 .nav-link,
 .texto-menu {
   font-family: "Open Sans", sans-serif;
-  color: #ffffff; /* blanco puro para mejor contraste */
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   padding: 0.5rem 1rem;
@@ -140,22 +196,6 @@ nav.navbar .navbar-nav .nav-link.active {
   color: #ffffff !important;
   font-weight: 600;
   text-decoration: underline;
-}
-
-/* ================================
-   LOGO
-=================================== */
-.logo-proyectos {
-  height: 70px;
-  max-width: 180px;
-  object-fit: contain;
-  border-radius: 6px;
-  transition: transform 0.2s ease;
-}
-
-.logo-proyectos:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
 }
 
 /* ================================
@@ -233,8 +273,8 @@ nav.navbar .navbar-nav .nav-link.active {
 }
 
 .carousel-item img.slide-img {
-  width: 100vw; /* ancho total de la ventana */
-  height: 400px; /* o el alto que quieras */
+  width: 100vw;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -320,6 +360,7 @@ nav.navbar .navbar-nav .nav-link.active {
 =================================== */
 .footer {
   width: 100%;
+  color: whitesmoke;
   background-color: #f8f9fa;
   padding: 2rem 1rem;
   text-align: center;
@@ -332,21 +373,9 @@ nav.navbar .navbar-nav .nav-link.active {
   gap: 0.75rem;
 }
 
-.footer-logo {
-  width: 140px;
-  height: auto;
-  margin-bottom: 0.5rem;
-  opacity: 0.95;
-  transition: opacity 0.3s ease;
-}
-
-.footer-logo:hover {
-  opacity: 1;
-}
-
 .footer-copy {
   font-size: 0.9rem;
-  color: #6c757d;
+  color: whitesmoke !important;
   font-family: "Open Sans", sans-serif;
   margin: 0;
   transition: color 0.3s ease;
@@ -394,7 +423,7 @@ nav.navbar .navbar-nav .nav-link.active {
 =================================== */
 .nuestra-filosofia {
   background-color: #212529;
-  color: #ffffff; /* blanco puro para texto */
+  color: #ffffff;
   max-width: 900px;
   margin: 0 auto 3rem auto;
   padding: 2rem;
@@ -417,7 +446,7 @@ nav.navbar .navbar-nav .nav-link.active {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  color: #ffffff; /* blanco puro para texto */
+  color: #ffffff;
   font-size: 1.15rem;
   line-height: 1.6;
   font-weight: 500;
@@ -470,7 +499,7 @@ nav.navbar .navbar-nav .nav-link.active {
   font-weight: 400;
 }
 
-/* Responsive */
+/* Responsive filosofía */
 @media (max-width: 768px) {
   .nuestra-filosofia-inner {
     flex-direction: column;
@@ -504,4 +533,120 @@ nav.navbar .navbar-nav .nav-link.active {
 
 .qs {
   color: whitesmoke;
+}
+
+@media (min-width: 1200px) {
+  .logo-proyectos {
+    height: 110px !important;
+    max-height: none !important;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .footer-copy,
+  footer small {
+    font-size: 1.1rem;
+  }
+}
+
+/* ================================
+   BENEFICIOS - DARK MODE
+=================================== */
+.benefit-card {
+  background-color: #212529;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 91, 150, 0.25);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #63b3ed; /* azul claro GR */
+}
+
+/* ================================
+   FORMULARIO DE CONTACTO - ESTILO CLARO
+=================================== */
+.formulario-contacto {
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #212529;
+}
+
+.formulario-contacto label {
+  color: #d3d6da;
+}
+
+.formulario-contacto .form-control {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+}
+
+.formulario-contacto .form-control:focus {
+  border-color: #63b3ed;
+  box-shadow: 0 0 0 0.2rem rgba(99, 179, 237, 0.25);
+}
+
+/* ================================
+   ESTILOS PARA SECCIÓN GUÍA GRATUITA
+=================================== */
+.guia-seccion p,
+.guia-seccion li {
+  color: #ffffff;
+}
+
+.guia-seccion ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.guia-seccion .btn-mio {
+  background-color: #ffffff;
+  color: #212529;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.guia-seccion .btn-mio:hover {
+  background-color: #005b96;
+  color: #ffffff;
+}
+
+/* ================================
+   ESPACIADO ENTRE TÍTULO Y PÁRRAFO
+=================================== */
+.guia-seccion h1,
+.guia-seccion h2 {
+  margin-bottom: 1.5rem;
+}
+
+.guia-seccion p {
+  margin-top: 1rem;
 }

@@ -17,52 +17,52 @@
   <body class="body">
     <!-- NAVEGACIÓN -->
     <header>
+      <!-- NAV -->
       <nav class="navbar navbar-expand-lg barra-navegacion">
-        <div class="container-fluid">
-          <!-- LOGO  -->
-          <a class="navbar-brand logo-proyectos" href="./index.html">
-            <img class="logo-proyectos" src="../assets/logo.png" alt="PA" />
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand logo-proyectos" href="../index.html">
+            <img
+              src="../assets/logo.png"
+              alt="Logo GR"
+              class="logo-proyectos"
+            />
           </a>
-          <!-- BOTÓN MENÚ HAMBURGUESA -->
           <button
-            class="navbar-toggler boton-menu-movil"
+            class="navbar-toggler custom-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="icono-hamburguesa"></span>
+            <span class="custom-menu-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse contenido-navegacion"
-            id="navbarSupportedContent"
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
           >
-            <ul class="navbar-nav navbar-nav-ul me-auto mb-2 mb-lg-0">
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu active texto-menu"
-                  href="../index.html"
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link active texto-menu" href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link link-menu texto-menu" href="./servicios.html"
+              <li class="nav-item">
+                <a class="nav-link texto-menu" href="./servicios.html"
                   >Servicios</a
                 >
               </li>
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./guias-gratuitas.html"
+              <li class="nav-item">
+                <a class="nav-link texto-menu" href="./guias-gratuitas.html"
                   >Guías gratuitas</a
                 >
               </li>
 
-              </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link link-menu texto-menu" href="./contacto.html"
+              <li class="nav-item">
+                <a class="nav-link texto-menu" href="./contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -70,121 +70,141 @@
           </div>
         </div>
       </nav>
-      <!-- FIN DE LA NAV -->
     </header>
     <main>
-<section class="py-5 bg-light">
-  <div class="container">
-    <!-- TÍTULO -->
-    <div class="text-center mb-5">
-      <h2 class="text-primary fw-bold">DEJANOS TU CONSULTA</h2>
-      <div class="underline mx-auto mt-2"></div>
-    </div>
+      <section class="py-5">
+        <div class="container">
+          <!-- TÍTULO -->
+          <div class="text-center mb-5">
+            <h2 class="text-primary fw-bold">DEJANOS TU CONSULTA</h2>
+            <div class="underline mx-auto mt-2"></div>
+          </div>
 
-    <!-- FORMULARIO -->
-    <form action="#" method="POST" novalidate>
-      <div class="row g-4">
-        <!-- Nombre y Teléfono -->
-        <div class="col-md-6">
-          <label for="nombre" class="form-label fw-semibold">Nombre y Apellido <span class="text-danger">*</span></label>
-          <input
-            type="text"
-            id="nombre"
-            class="form-control form-control-lg"
-            
-            autocomplete="name"
-          />
-          <div class="invalid-feedback">Por favor ingresá tu nombre completo.</div>
-        </div>
-        <div class="col-md-6">
-          <label for="telefono" class="form-label fw-semibold">Teléfono (opcional)</label>
-          <input
-            type="tel"
-            id="telefono"
-            class="form-control form-control-lg"
-           
-            autocomplete="tel"
-          />
-        </div>
+          <!-- FORMULARIO -->
+          <form action="#" method="POST" class="formulario-contacto" novalidate>
+            <div class="row g-4">
+              <!-- Nombre y Teléfono -->
+              <div class="col-md-6">
+                <label for="nombre" class="form-label fw-semibold"
+                  >Nombre y Apellido <span class="text-danger">*</span></label
+                >
+                <input
+                  type="text"
+                  id="nombre"
+                  class="form-control form-control-lg"
+                  autocomplete="name"
+                />
+                <div class="invalid-feedback">
+                  Por favor ingresá tu nombre completo.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="telefono" class="form-label fw-semibold"
+                  >Teléfono (opcional)</label
+                >
+                <input
+                  type="tel"
+                  id="telefono"
+                  class="form-control form-control-lg"
+                  autocomplete="tel"
+                />
+              </div>
 
-        <!-- Email y Rubro -->
-        <div class="col-md-6">
-          <label for="email" class="form-label fw-semibold">Correo electrónico <span class="text-danger">*</span></label>
-          <input
-            type="email"
-            id="email"
-            class="form-control form-control-lg"
-            
-            autocomplete="email"
-          />
-          <div class="invalid-feedback">Por favor ingresá un email válido.</div>
-        </div>
-        <div class="col-md-6">
-          <label for="rubro" class="form-label fw-semibold">Rubro o tipo de negocio</label>
-          <input
-            type="text"
-            id="rubro"
-            class="form-control form-control-lg"
+              <!-- Email y Rubro -->
+              <div class="col-md-6">
+                <label for="email" class="form-label fw-semibold"
+                  >Correo electrónico <span class="text-danger">*</span></label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control form-control-lg"
+                  autocomplete="email"
+                />
+                <div class="invalid-feedback">
+                  Por favor ingresá un email válido.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="rubro" class="form-label fw-semibold"
+                  >Rubro o tipo de negocio</label
+                >
+                <input
+                  type="text"
+                  id="rubro"
+                  class="form-control form-control-lg"
+                />
+              </div>
 
-          />
-        </div>
+              <!-- Provincia -->
+              <div class="col-md-6">
+                <label for="provincia" class="form-label fw-semibold"
+                  >Provincia</label
+                >
+                <input
+                  type="text"
+                  id="provincia"
+                  class="form-control form-control-lg"
+                />
+              </div>
 
-        <!-- Provincia -->
-        <div class="col-md-6">
-          <label for="provincia" class="form-label fw-semibold">Provincia</label>
-          <input
-            type="text"
-            id="provincia"
-            class="form-control form-control-lg"
-            
-          />
-        </div>
+              <!-- Asunto -->
+              <div class="col-12">
+                <label for="asunto" class="form-label fw-semibold"
+                  >Asunto de la consulta</label
+                >
+                <input
+                  type="text"
+                  id="asunto"
+                  class="form-control form-control-lg"
+                  placeholder="Automatización de ventas, desarrollo web, asesoramiento..."
+                />
+              </div>
 
-        <!-- Asunto -->
-        <div class="col-12">
-          <label for="asunto" class="form-label fw-semibold">Asunto de la consulta</label>
-          <input
-            type="text"
-            id="asunto"
-            class="form-control form-control-lg"
-            placeholder="Automatización de ventas, desarrollo web, asesoramiento..."
-          />
-        </div>
+              <!-- Mensaje -->
+              <div class="col-12">
+                <label for="mensaje" class="form-label fw-semibold"
+                  >Mensaje <span class="text-danger">*</span></label
+                >
+                <textarea
+                  id="mensaje"
+                  class="form-control form-control-lg"
+                  rows="6"
+                  placeholder="Contanos brevemente en qué podemos ayudarte o qué necesitás para tu negocio."
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  Por favor escribí tu mensaje.
+                </div>
+              </div>
 
-        <!-- Mensaje -->
-        <div class="col-12">
-          <label for="mensaje" class="form-label fw-semibold">Mensaje <span class="text-danger">*</span></label>
-          <textarea
-            id="mensaje"
-            class="form-control form-control-lg"
-            rows="6"
-            placeholder="Contanos brevemente en qué podemos ayudarte o qué necesitás para tu negocio."
-            required
-          ></textarea>
-          <div class="invalid-feedback">Por favor escribí tu mensaje.</div>
+              <!-- Botón -->
+              <div class="col-12 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg px-5 shadow-sm"
+                >
+                  Enviar consulta
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-
-        <!-- Botón -->
-        <div class="col-12 text-center">
-          <button type="submit" class="btn btn-primary btn-lg px-5 shadow-sm">
-            Enviar consulta
-          </button>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
-
+      </section>
     </main>
 
-    <footer class="footer">
-      <img
-        src="../assets/logo.png"
-        alt="Logo Proyectos Agropecuarios"
-        class="footer-logo"
-      />
-      <p class="footer-copy">Proyectos Agropecuarios</p>
-      <p class="footer-copy">Todos los derechos reservados © 2025</p>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-light text-center py-4">
+      <div class="container">
+        <img
+          src="../assets/logo.png"
+          alt="Logo GR"
+          class="logo-proyectos-footer"
+          class="mb-2"
+        />
+        <p class="mb-0 footer-copy">GR Soluciones Digitales</p>
+        <small>Todos los derechos reservados © 2025</small>
+      </div>
     </footer>
     <!-- SCRIPT -->
     <script

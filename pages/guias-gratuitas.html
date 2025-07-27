@@ -9,61 +9,65 @@
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous"
     />
 
     <!-- CSS personalizado -->
     <link rel="stylesheet" href="../styles/style.css" />
+    <style>
+      .gr-list-benefits {
+        list-style: none;
+        padding-left: 0;
+      }
+    </style>
   </head>
 
   <body class="body">
     <!-- NAVEGACIÓN -->
     <header>
       <nav class="navbar navbar-expand-lg barra-navegacion">
-        <div class="container-fluid">
-          <a class="navbar-brand logo-proyectos" href="./index.html">
-            <img class="logo-proyectos" src="../assets/logo.png" alt="PA" />
+        <div
+          class="container d-flex justify-content-between align-items-center"
+        >
+          <a class="navbar-brand logo-proyectos" href="../index.html">
+            <img
+              src="../assets/logo.png"
+              alt="Logo GR"
+              class="logo-proyectos"
+            />
           </a>
           <button
-            class="navbar-toggler boton-menu-movil"
+            class="navbar-toggler custom-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="icono-hamburguesa"></span>
+            <span class="custom-menu-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse contenido-navegacion"
-            id="navbarSupportedContent"
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
           >
-            <ul class="navbar-nav navbar-nav-ul me-auto mb-2 mb-lg-0">
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu active texto-menu"
-                  href="../index.html"
+            <ul class="navbar-nav gap-3">
+              <li class="nav-item">
+                <a class="nav-link active texto-menu" href="../index.html"
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link link-menu texto-menu" href="./servicios.html"
+              <li class="nav-item">
+                <a class="nav-link texto-menu" href="./servicios.html"
                   >Servicios</a
                 >
               </li>
-              <li class="nav-item item-menu">
-                <a
-                  class="nav-link link-menu texto-menu"
-                  href="./guias-gratuitas.html"
+              <li class="nav-item">
+                <a class="nav-link texto-menu" href="./guias-gratuitas.html"
                   >Guías gratuitas</a
                 >
               </li>
-
-              </li>
-              <li class="nav-item item-menu">
-                <a class="nav-link link-menu texto-menu" href="./contacto.html"
+              <li class="nav-item">
+                <a class="nav-link texto-menu" href="./contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -75,18 +79,11 @@
 
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container my-5">
-      <section class="row align-items-center justify-content-center mb-5">
-        <!-- Imagen -->
-        <div class="col-md-5 text-center mb-4 mb-md-0">
-          <img
-            src="../assets/guia-portada.png"
-            alt="Portada guía gratuita"
-            class="img-fluid rounded shadow-sm float-up-on-load"
-          />
-        </div>
-
-        <!-- Texto -->
-        <div class="col-md-6">
+      <section
+        class="row align-items-center justify-content-center mb-5 guia-seccion"
+      >
+        <!-- TEXTO primero en mobile -->
+        <div class="col-md-6 order-2 order-md-1">
           <h1 class="gr-title mb-3">Guía Gratuita: IA aplicada al Marketing</h1>
           <p class="gr-subtitle mb-4">
             Descargá gratis nuestra guía completa para aplicar inteligencia
@@ -97,45 +94,33 @@
             En un entorno cada vez más competitivo, la IA dejó de ser una
             tendencia para convertirse en una herramienta clave para quienes
             quieren escalar su negocio con eficiencia, creatividad y visión
-            estratégica. Esta guía fue diseñada especialmente para
-            emprendedores, profesionales del marketing y pequeñas empresas que
-            buscan dar el siguiente paso en su transformación digital sin
-            necesidad de grandes inversiones.
+            estratégica.
           </p>
 
           <h1 class="gr-title mb-3">¿Qué vas a encontrar en esta guía?</h1>
           <ul class="gr-list-benefits">
             <li>
               ✅ Herramientas de inteligencia artificial para redes sociales,
-              contenido y diseño, seleccionadas por su facilidad de uso y
-              resultados comprobados.
+              contenido y diseño, seleccionadas por su facilidad de uso.
             </li>
             <li>
               ✅ Cómo automatizar tareas repetitivas sin perder el toque humano,
-              logrando más tiempo para lo importante: pensar en estrategias,
-              conectar con tu comunidad y hacer crecer tu negocio.
+              logrando más tiempo para lo importante.
             </li>
             <li>
               ✅ Plataformas recomendadas para emprendedores y pymes que te
               permitirán optimizar procesos, reducir costos y tomar decisiones
-              basadas en datos reales.
+              con datos reales.
             </li>
             <li>
               ✅ Ejemplos prácticos y casos reales para aplicar de inmediato,
-              sin conocimientos técnicos ni curva de aprendizaje complicada.
+              sin conocimientos técnicos.
             </li>
             <li>
-              ✅ Bonus exclusivo: recomendaciones para empezar a incorporar IA
-              en tu negocio aún si no contás con presupuesto, aprovechando
-              herramientas gratuitas y recursos accesibles.
+              ✅ Bonus exclusivo: herramientas gratuitas para incorporar IA sin
+              presupuesto.
             </li>
           </ul>
-
-          <p class="mt-4">
-            Esta guía es más que un recurso: es tu punto de partida para
-            construir una estrategia digital inteligente, automatizada y lista
-            para escalar.
-          </p>
 
           <a
             href="./formulario.html"
@@ -145,28 +130,38 @@
             📥 Descargar la guía gratuita
           </a>
         </div>
+
+        <!-- IMAGEN segundo en mobile -->
+        <div class="col-md-5 text-center order-1 order-md-2 mb-4 mb-md-0">
+          <img
+            src="../assets/guia-portada.png"
+            alt="Portada guía gratuita"
+            class="img-fluid rounded shadow-sm float-up-on-load"
+          />
+        </div>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer text-center py-4">
-      <img
-        src="../assets/logo.png"
-        alt="Logo Proyectos Agropecuarios"
-        class="footer-logo mb-2"
-      />
-      <p class="footer-copy mb-1">Proyectos Agropecuarios</p>
-      <p class="footer-copy mb-0">Todos los derechos reservados © 2025</p>
+    <footer class="bg-dark text-light text-center py-4">
+      <div class="container">
+        <img
+          src="../assets/logo.png"
+          alt="Logo GR"
+          class="logo-proyectos-footer mb-2"
+        />
+        <p class="mb-0 footer-copy">GR Soluciones Digitales</p>
+        <small>Todos los derechos reservados © 2025</small>
+      </div>
     </footer>
 
-    <!-- SCRIPTS -->
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
 
-    <!-- JS para animación -->
+    <!-- JS animación -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         const floatImages = document.querySelectorAll(".float-up-on-load");
