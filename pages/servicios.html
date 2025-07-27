@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
 
-  <body>
+  <body class="body">
     <!-- HEADER -->
     <header>
       <nav class="navbar navbar-expand-lg barra-navegacion">
@@ -51,9 +51,7 @@
                   >Guías gratuitas</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./sobregr.html">Sobre GR</a>
-              </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
@@ -65,136 +63,180 @@
 
     <!-- MAIN -->
     <main class="container-fluid p-0">
-      <h1 class="text-center">Nuestros Servicios</h1>
+      <section>
+        <h1 class="text-center">Nuestros Servicios</h1>
 
-      <div
-        id="serviciosCarousel"
-        class="carousel slide"
-        data-bs-ride="carousel"
-        data-bs-interval="8000"
-      >
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active position-relative">
-            <div class="overlay"></div>
-            <img
-              src="../assets/branding.png"
-              class="slide-img"
-              alt="Branding"
-            />
-            <div class="carousel-caption d-block">
-              <h5>Branding e identidad visual</h5>
-              <p>
-                Kit de marca, manual de marca, presentación profesional y kit
-                cliente.
-              </p>
+        <div
+          id="serviciosCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="8000"
+        >
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active position-relative">
+              <div class="overlay"></div>
+              <img
+                src="../assets/branding.png"
+                class="slide-img"
+                alt="Branding"
+              />
+              <div class="carousel-caption d-block">
+                <h5>Branding e identidad visual</h5>
+                <p>
+                  Kit de marca, manual de marca, presentación profesional y kit
+                  cliente.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item position-relative">
+              <div class="overlay"></div>
+              <img
+                src="../assets/contenido-redes.png"
+                class="slide-img"
+                alt="Redes Sociales"
+              />
+              <div class="carousel-caption d-block">
+                <h5>Contenido para redes sociales</h5>
+                <p>
+                  Pack semanal, gestión mensual de redes y diseño de plantillas.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item position-relative">
+              <div class="overlay"></div>
+              <img
+                src="../assets/automatizacion.png"
+                class="slide-img"
+                alt="Automatización"
+              />
+              <div class="carousel-caption d-block">
+                <h5>Automatización y embudos digitales</h5>
+                <p>
+                  Email marketing, landing page, guías y embudos de captación.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item position-relative">
+              <div class="overlay"></div>
+              <img
+                src="../assets/consultoria.png"
+                class="slide-img"
+                alt="Consultoría"
+              />
+              <div class="carousel-caption d-block">
+                <h5>Asesoramiento estratégico y consultoría</h5>
+                <p>
+                  Sesión 1 a 1, plan de marketing personalizado y mentoría
+                  mensual.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item position-relative">
+              <div class="overlay"></div>
+              <img
+                src="../assets/presentaciones.png"
+                class="slide-img"
+                alt="Presentaciones"
+              />
+              <div class="carousel-caption d-block">
+                <h5>Presentaciones profesionales</h5>
+                <p>
+                  Pitch decks, propuestas comerciales y presentaciones visuales
+                  de alto impacto.
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-item position-relative">
+              <div class="overlay"></div>
+              <img
+                src="../assets/estudio-de-mercado.png"
+                class="slide-img"
+                alt="Estudio de mercado y SEO"
+              />
+              <div class="carousel-caption d-block">
+                <h5>Estudio de mercado y SEO</h5>
+                <p>
+                  Análisis de competencia, mapa de clientes, insights clave, SEO
+                  y optimización web.
+                </p>
+              </div>
             </div>
           </div>
 
-          <!-- Slide 2 -->
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="../assets/contenido-redes.png"
-              class="slide-img"
-              alt="Redes Sociales"
-            />
-            <div class="carousel-caption d-block">
-              <h5>Contenido para redes sociales</h5>
-              <p>
-                Pack semanal, gestión mensual de redes y diseño de plantillas.
-              </p>
-            </div>
-          </div>
+          <!-- Controles -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#serviciosCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#serviciosCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
 
-          <!-- Slide 3 -->
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="../assets/automatizacion.png"
-              class="slide-img"
-              alt="Automatización"
-            />
-            <div class="carousel-caption d-block">
-              <h5>Automatización y embudos digitales</h5>
-              <p>
-                Email marketing, landing page, guías y embudos de captación.
-              </p>
+      <section class="py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center text-primary mb-5">
+            Beneficios de trabajar con GR
+          </h2>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            <div class="col">
+              <div class="benefit-card text-center p-4">
+                <div class="benefit-icon">🤝</div>
+                <h5>Atención personalizada</h5>
+                <p>
+                  Directa, sin vueltas y enfocada en tus verdaderas necesidades.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="../assets/consultoria.png"
-              class="slide-img"
-              alt="Consultoría"
-            />
-            <div class="carousel-caption d-block">
-              <h5>Asesoramiento estratégico y consultoría</h5>
-              <p>
-                Sesión 1 a 1, plan de marketing personalizado y mentoría
-                mensual.
-              </p>
+            <div class="col">
+              <div class="benefit-card text-center p-4">
+                <div class="benefit-icon">⚙️</div>
+                <h5>Automatización real</h5>
+                <p>
+                  Soluciones adaptadas a tu negocio, sin sistemas genéricos.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <!-- Slide 5 -->
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="../assets/presentaciones.png"
-              class="slide-img"
-              alt="Presentaciones"
-            />
-            <div class="carousel-caption d-block">
-              <h5>Presentaciones profesionales</h5>
-              <p>
-                Pitch decks, propuestas comerciales y presentaciones visuales de
-                alto impacto.
-              </p>
+            <div class="col">
+              <div class="benefit-card text-center p-4">
+                <div class="benefit-icon">📊</div>
+                <h5>Resultados medibles</h5>
+                <p>Con enfoque estratégico y herramientas modernas.</p>
+              </div>
             </div>
-          </div>
-
-          <!-- Slide 6 -->
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="../assets/estudio-de-mercado.png"
-              class="slide-img"
-              alt="Estudio de mercado y SEO"
-            />
-            <div class="carousel-caption d-block">
-              <h5>Estudio de mercado y SEO</h5>
-              <p>
-                Análisis de competencia, mapa de clientes, insights clave, SEO y
-                optimización web.
-              </p>
+            <div class="col">
+              <div class="benefit-card text-center p-4">
+                <div class="benefit-icon">📚</div>
+                <h5>Acceso a recursos</h5>
+                <p>Guías, herramientas y acompañamiento constante.</p>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- Controles -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#serviciosCarousel"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#serviciosCarousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
-      </div>
+      </section>
 
       <!-- CTA -->
       <div class="text-center my-5">

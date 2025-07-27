@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
-  <body>
+  <body class="body">
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg barra-navegacion">
       <div class="container d-flex justify-content-between align-items-center">
@@ -48,11 +48,7 @@
                 >Guías gratuitas</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link texto-menu" href="./pages/sobregr.html"
-                >Sobre GR</a
-              >
-            </li>
+
             <li class="nav-item">
               <a class="nav-link texto-menu" href="./pages/contacto.html"
                 >Contacto</a
@@ -70,115 +66,91 @@
           Impulsamos tu negocio con <br />
           <span class="text-primary">inteligencia digital</span>
         </h1>
-        <p>
-          Automatizamos procesos, optimizamos tu estrategia y potenciamos tus
-          ventas con soluciones inteligentes adaptadas a tu negocio.
-        </p>
+
         <a href="./pages/formulario.html" class="gr-cta-btn">
           Descargá la guía gratuita
         </a>
       </div>
     </section>
 
-    <!-- QUIÉNES SOMOS -->
+    <!-- SECCIÓN QUIÉNES SOMOS Y NUESTRA FILOSOFÍA (DOS COLUMNAS) -->
     <section class="py-5">
-      <div class="container">
-        <h2 class="text-center text-primary mb-4">¿Quiénes somos?</h2>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <p>
-              GR nació con una visión clara: ayudar a las marcas a digitalizarse
-              sin complicaciones, sin tecnicismos innecesarios y con resultados
-              medibles.
-            </p>
-            <p>
-              Trabajamos con herramientas actuales como inteligencia artificial,
-              automatizaciones y campañas online que convierten. Ya acompañamos
-              a más de <strong>100 emprendimientos</strong> en Latinoamérica a
-              potenciar su presencia digital, profesionalizar su comunicación y
-              generar ventas constantes con sistemas simples.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FILOSOFÍA DE TRABAJO -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center text-primary mb-4">
-          Nuestra filosofía de trabajo
-        </h2>
-        <p class="text-center text-muted mx-auto" style="max-width: 750px">
-          En GR Soluciones Digitales combinamos estrategia, automatización e
-          inteligencia artificial para transformar negocios reales en sistemas
-          digitales eficientes, escalables y medibles.
-        </p>
-        <div class="row text-center mt-5">
-          <div class="col-md-4 mb-4">
-            <h5>🔍 Diagnóstico estratégico</h5>
-            <p>
-              Analizamos tu situación y definimos el camino ideal según tu
-              negocio, presupuesto y mercado.
-            </p>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5>⚙️ Automatización inteligente</h5>
-            <p>
-              Integramos herramientas digitales para ahorrar tiempo, captar más
-              leads y aumentar conversiones.
-            </p>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5>📊 Optimización continua</h5>
-            <p>
-              Medimos, ajustamos y evolucionamos tu ecosistema digital mes a mes
-              para obtener mejores resultados.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center text-primary mb-5">
-          Beneficios de trabajar con GR
-        </h2>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-          <div class="col">
-            <div class="benefit-card text-center p-4">
-              <div class="benefit-icon">🤝</div>
-              <h5>Atención personalizada</h5>
-              <p>
-                Directa, sin vueltas y enfocada en tus verdaderas necesidades.
+      <div
+        class="container d-flex flex-wrap gap-4 quienes-filosofia-container justify-content-center"
+      >
+        <!-- Quiénes somos -->
+        <section class="py-5">
+          <div
+            class="quienes-somos row bg-dark text-light rounded shadow p-4 align-items-center mx-auto"
+            style="max-width: 900px"
+          >
+            <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+              <h2 class="quienes-somos-title text-primary text-center mb-4">
+                ¿Quiénes somos?
+              </h2>
+              <p class="qs">
+                GR nació con una visión clara: ayudar a las marcas a
+                digitalizarse sin complicaciones, sin tecnicismos innecesarios y
+                con resultados medibles.
+              </p>
+              <p class="qs">
+                Trabajamos con herramientas actuales como inteligencia
+                artificial, automatizaciones y campañas online que convierten.
+                Ya acompañamos a más de <strong>100 emprendimientos</strong> en
+                Latinoamérica a potenciar su presencia digital, profesionalizar
+                su comunicación y generar ventas constantes con sistemas
+                simples.
               </p>
             </div>
-          </div>
-          <div class="col">
-            <div class="benefit-card text-center p-4">
-              <div class="benefit-icon">⚙️</div>
-              <h5>Automatización real</h5>
-              <p>Soluciones adaptadas a tu negocio, sin sistemas genéricos.</p>
+            <div class="col-lg-6 col-md-12 text-center">
+              <img
+                src="./assets/quienes-somosss.jpg"
+                alt="Quiénes somos"
+                class="img-fluid rounded shadow"
+                style="max-height: 350px; object-fit: cover"
+              />
             </div>
           </div>
-          <div class="col">
-            <div class="benefit-card text-center p-4">
-              <div class="benefit-icon">📊</div>
-              <h5>Resultados medibles</h5>
-              <p>Con enfoque estratégico y herramientas modernas.</p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="benefit-card text-center p-4">
-              <div class="benefit-icon">📚</div>
-              <h5>Acceso a recursos</h5>
-              <p>Guías, herramientas y acompañamiento constante.</p>
-            </div>
-          </div>
-        </div>
+        </section>
+
+       <section class="nuestra-filosofia py-5">
+  <div class="nuestra-filosofia-inner">
+    <div class="nf-texto">
+      <h2 class="filosofia-titulo text-primary mb-4">Nuestra filosofía de trabajo</h2>
+      <p class="qs">
+        Combinamos estrategia, automatización e inteligencia artificial para
+        transformar negocios reales en sistemas digitales eficientes,
+        escalables y medibles. Te acompañamos en cada paso para que lleves
+        tu negocio al próximo nivel.
+      </p>
+    </div>
+    <div class="nf-pilares">
+      <div class="pilar-card">
+        <div class="pilar-icono">🔍</div>
+        <h5 class="pilar-titulo">Diagnóstico estratégico</h5>
+        <p class="pilar-texto">
+          Analizamos tu situación y definimos el camino ideal según tu negocio, presupuesto y mercado.
+        </p>
       </div>
-    </section>
+      <div class="pilar-card">
+        <div class="pilar-icono">⚙️</div>
+        <h5 class="pilar-titulo">Automatización inteligente</h5>
+        <p class="pilar-texto">
+          Integramos herramientas digitales para ahorrar tiempo, captar más leads y aumentar conversiones.
+        </p>
+      </div>
+      <div class="pilar-card">
+        <div class="pilar-icono">📊</div>
+        <h5 class="pilar-titulo">Optimización continua</h5>
+        <p class="pilar-texto">
+          Medimos, ajustamos y evolucionamos tu ecosistema digital mes a mes para obtener mejores resultados.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</section>
 
     <!-- FOOTER -->
     <footer class="bg-dark text-light text-center py-4">

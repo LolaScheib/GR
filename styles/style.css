@@ -3,16 +3,15 @@
 /* ================================
    RESET Y BASE
 =================================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+.body {
   font-family: "Open Sans", sans-serif;
-  background-color: #f8f9fa;
+  background-color: #212529;
   color: #1e2a38;
   line-height: 1.7;
   text-align: justify;
@@ -21,7 +20,6 @@ body {
 /* ================================
    TIPOGRAFÍA GENERAL
 =================================== */
-
 h1,
 h2,
 h3,
@@ -89,11 +87,10 @@ a:hover {
 /* ================================
    NAVBAR
 =================================== */
-
 .barra-navegacion {
-  background-color: #ffffff;
+  background-color: #212529 !important;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
   z-index: 1000;
   position: sticky;
@@ -124,7 +121,7 @@ a:hover {
 .nav-link,
 .texto-menu {
   font-family: "Open Sans", sans-serif;
-  color: #1e2a38;
+  color: #ffffff; /* blanco puro para mejor contraste */
   font-size: 16px;
   font-weight: 500;
   padding: 0.5rem 1rem;
@@ -135,14 +132,19 @@ a:hover {
 .nav-link:focus,
 .nav-link.active,
 .texto-menu:hover {
-  color: #005b96;
+  color: #ebf7ff;
+  text-decoration: underline;
+}
+
+nav.navbar .navbar-nav .nav-link.active {
+  color: #ffffff !important;
+  font-weight: 600;
   text-decoration: underline;
 }
 
 /* ================================
    LOGO
 =================================== */
-
 .logo-proyectos {
   height: 70px;
   max-width: 180px;
@@ -153,12 +155,12 @@ a:hover {
 
 .logo-proyectos:hover {
   transform: scale(1.05);
+  filter: brightness(1.1);
 }
 
 /* ================================
    HERO
 =================================== */
-
 .hero-img-banner {
   background-image: url("../assets/portada-index.png");
   background-size: cover;
@@ -172,6 +174,7 @@ a:hover {
   justify-content: center;
   min-height: 100vh;
 }
+
 .hero-img-banner::before {
   content: "";
   position: absolute;
@@ -188,9 +191,10 @@ a:hover {
   position: relative;
   z-index: 2;
   max-width: 900px;
-  margin-left: 6%;
+  margin-left: 10%;
   padding-right: 4%;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 24px;
 }
 
 .hero-img-content h1 {
@@ -202,16 +206,9 @@ a:hover {
   line-height: 1.3;
 }
 
-.hero-img-content p {
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: #e5e5e5;
-  margin-bottom: 40px;
-  max-width: 600px;
-  text-align: left;
-}
-
 .hero-img-content .gr-cta-btn {
+  display: inline-block;
+  margin-top: 32px;
   background-color: #005b96;
   border: none;
   padding: 14px 28px;
@@ -220,6 +217,7 @@ a:hover {
   border-radius: 6px;
   transition: all 0.3s ease;
   color: #ffffff;
+  text-align: center;
 }
 
 .hero-img-content .gr-cta-btn:hover {
@@ -229,17 +227,14 @@ a:hover {
 /* ================================
    CARRUSEL DE SERVICIOS
 =================================== */
-
 .carousel-item {
   position: relative;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .carousel-item img.slide-img {
-  width: 100vw;
-  /* <-- ancho total de la ventana */
-  height: 400px;
-  /* o el alto que quieras */
+  width: 100vw; /* ancho total de la ventana */
+  height: 400px; /* o el alto que quieras */
   object-fit: cover;
 }
 
@@ -323,7 +318,6 @@ a:hover {
 /* ================================
    FOOTER
 =================================== */
-
 .footer {
   width: 100%;
   background-color: #f8f9fa;
@@ -365,7 +359,6 @@ a:hover {
 /* ================================
    ANIMACIONES
 =================================== */
-
 @keyframes fadeUp {
   0% {
     opacity: 0;
@@ -380,7 +373,6 @@ a:hover {
 /* ================================
    RESPONSIVE: TÍTULOS H1 EN MOBILE
 =================================== */
-
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
@@ -395,4 +387,121 @@ a:hover {
     line-height: 1.3;
     margin-bottom: 0.75rem;
   }
+}
+
+/* ================================
+   NUESTRA FILOSOFÍA DE TRABAJO
+=================================== */
+.nuestra-filosofia {
+  background-color: #212529;
+  color: #ffffff; /* blanco puro para texto */
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 91, 150, 0.1);
+}
+
+.nuestra-filosofia-inner {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nf-texto {
+  height: 100%;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #ffffff; /* blanco puro para texto */
+  font-size: 1.15rem;
+  line-height: 1.6;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+}
+
+.nf-pilares {
+  flex: 2 1 550px;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nf-pilares .pilar-card {
+  max-width: 170px;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  background: #2a3748;
+  box-shadow: 0 8px 24px rgba(0, 91, 150, 0.1);
+  cursor: default;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nf-pilares .pilar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 42px rgba(0, 91, 150, 0.2);
+}
+
+.nf-pilares .pilar-icono {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  color: #007bff;
+  filter: drop-shadow(0 2px 2px rgba(0, 123, 255, 0.5));
+}
+
+.nf-pilares .pilar-titulo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #63b3ed !important;
+  margin-bottom: 0.5rem;
+}
+
+.nf-pilares .pilar-texto {
+  font-size: 0.95rem;
+  color: #ffffff !important;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nuestra-filosofia-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nf-texto {
+    color: #ffffff !important;
+  }
+
+  .nf-pilares {
+    max-width: 100%;
+    flex: unset;
+    gap: 1rem;
+  }
+
+  .nf-pilares .pilar-card {
+    max-width: 100%;
+  }
+}
+
+.quienes-somos .quienesomos-texto {
+  color: #ffffff !important;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.qs {
+  color: whitesmoke;
 }
