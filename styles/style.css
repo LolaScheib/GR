@@ -906,3 +906,33 @@ form .form-select:focus {
   object-fit: cover;
   object-position: center;
 }
+
+@media (max-width: 768px) {
+  .hero-img-banner {
+    padding: 80px 20px 40px;
+    min-height: auto;
+    align-items: flex-start;
+    background-position: top center;
+  }
+
+  .hero-img-content {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .hero-img-content h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .hero-benefits {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-img-content .gr-cta-btn {
+    margin-top: 24px;
+  }
+}
