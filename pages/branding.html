@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body class="body">
@@ -123,7 +124,10 @@
       <section class="py-5 text-dark">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
+            <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" 
+  data-aos-offset="300"
+  data-aos-easing="ease-in-sine"
+  data-aos-duration="1500">
               <img
                 src="../assets/branding.png"
                 class="img-fluid rounded img-individual"
@@ -239,5 +243,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>
