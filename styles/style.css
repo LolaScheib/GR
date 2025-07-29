@@ -565,7 +565,10 @@ nav.navbar .navbar-nav .nav-link.active {
 }
 
 .qs {
-  color: whitesmoke;
+  text-align: left; /* Alinea el texto a la izquierda */
+  line-height: 1.6; /* Mejora la lectura entre líneas */
+  letter-spacing: normal; /* Asegura espaciado normal entre letras */
+  word-spacing: normal; /* Evita separación exagerada entre palabras */
 }
 
 @media (min-width: 1200px) {
