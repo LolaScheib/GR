@@ -909,6 +909,7 @@ form .form-select:focus {
 
 @media (max-width: 768px) {
   .hero-img-banner {
+    padding-top: 160px;
     padding: 80px 20px 40px;
     min-height: auto;
     align-items: flex-start;
