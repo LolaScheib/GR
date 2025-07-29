@@ -937,7 +937,7 @@ form .form-select:focus {
 
   .hero-img-content {
     margin-left: 0;
-    padding: 115px;
+    padding: auto;
     text-align: center;
   }
 
@@ -958,5 +958,22 @@ form .form-select:focus {
 }
 
 .whatsapp-float {
-  position: sticky;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: auto;
+}
+
+/* Efecto hover opcional */
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }
