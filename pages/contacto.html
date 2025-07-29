@@ -9,232 +9,290 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../styles/style.css" />
+    <style>
+      /* Estilo para hero lateral */
+      .hero-lateral {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.4) 0%,
+            transparent 30%
+          ),
+          url("../assets/portadaa.png") center center / cover no-repeat;
+      }
+
+      /* Botón flotante de WhatsApp */
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        width: 60px;
+        height: 60px;
+      }
+
+      .whatsapp-float img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body class="body">
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar navbar-expand-lg barra-navegacion">
-        <div
-          class="container d-flex justify-content-between align-items-center"
-        >
-          <a class="navbar-brand logo-proyectos" href="../index.html">
-            <img
-              src="../assets/logo.png"
-              alt="Logo GR"
-              class="logo-proyectos"
-            />
-          </a>
-          <button
-            class="navbar-toggler custom-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="custom-menu-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav gap-3">
-              <li class="nav-item">
-                <a class="nav-link texto-menu" href="../index.html">Inicio</a>
-              </li>
-             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle texto-menu"
-                href="#"
-                id="navbarServicios"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Columna izquierda: contenido principal -->
+        <div class="col-lg-8 col-md-12">
+          <!-- NAVBAR -->
+          <header>
+            <nav class="navbar navbar-expand-lg barra-navegacion">
+              <div
+                class="container d-flex justify-content-between align-items-center"
               >
-                Servicios
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarServicios">
-                <li>
-                  <a class="dropdown-item" href="./branding.html"
-                    >Branding</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./automatizacion.html"
-                    >Automatización</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./redes-sociales.html"
-                    >Contenido Redes</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./consultoria.html"
-                    >Consultoría</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./estudio-mercado-seo.html"
-                    >Estudio de mercado y SEO</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./presentaciones.html"
-                    >Presentaciones</a
-                  >
-                </li>
-              </ul>
-            </li>
-            
-              </li>
-              <li class="nav-item">
-                <a class="nav-link texto-menu" href="./guias-gratuitas.html"
-                  >Guías gratuitas</a
+                <a class="navbar-brand logo-proyectos" href="../index.html">
+                  <img
+                    src="../assets/logo.png"
+                    alt="Logo GR"
+                    class="logo-proyectos"
+                  />
+                </a>
+                <button
+                  class="navbar-toggler custom-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
                 >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link texto-menu" href="./contacto.html"
-                  >Contacto</a
+                  <span class="custom-menu-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse justify-content-center"
+                  id="navbarNav"
                 >
-              </li>
-            </ul>
-          </div>
+                  <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                      <a class="nav-link texto-menu" href="../index.html"
+                        >Inicio</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle texto-menu"
+                        href="#"
+                        id="navbarServicios"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Servicios
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarServicios"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="./branding.html"
+                            >Branding</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./automatizacion.html"
+                            >Automatización</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./redes-sociales.html"
+                            >Contenido Redes</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./consultoria.html"
+                            >Consultoría</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="./estudio-mercado-seo.html"
+                            >Estudio de mercado y SEO</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="./presentaciones.html"
+                            >Presentaciones</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link texto-menu"
+                        href="./guias-gratuitas.html"
+                        >Guías gratuitas</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link texto-menu" href="./contacto.html"
+                        >Contacto</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+          <!-- MAIN -->
+          <main class="container py-5">
+            <section class="text-center mb-5">
+              <h1 class="text-primary fw-bold titulo-guia">
+                Dejanos tu consulta
+              </h1>
+              <p class="parrafo-guia">
+                Completá el formulario y nos pondremos en contacto con vos lo
+                antes posible.
+              </p>
+            </section>
+
+            <section>
+              <form
+                action="#"
+                method="POST"
+                class="formulario-contacto"
+                novalidate
+              >
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label fw-semibold"
+                      >Nombre y Apellido
+                      <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="nombre"
+                      class="form-control form-control-lg"
+                      required
+                      autocomplete="name"
+                    />
+                    <div class="invalid-feedback">
+                      Por favor ingresá tu nombre completo.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="telefono" class="form-label fw-semibold"
+                      >Teléfono (opcional)</label
+                    >
+                    <input
+                      type="tel"
+                      id="telefono"
+                      class="form-control form-control-lg"
+                      autocomplete="tel"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="email" class="form-label fw-semibold"
+                      >Correo electrónico
+                      <span class="text-danger">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control form-control-lg"
+                      required
+                      autocomplete="email"
+                    />
+                    <div class="invalid-feedback">
+                      Por favor ingresá un email válido.
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="rubro" class="form-label fw-semibold"
+                      >Rubro o tipo de negocio</label
+                    >
+                    <input
+                      type="text"
+                      id="rubro"
+                      class="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="provincia" class="form-label fw-semibold"
+                      >Provincia</label
+                    >
+                    <input
+                      type="text"
+                      id="provincia"
+                      class="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="asunto" class="form-label fw-semibold"
+                      >Asunto de la consulta</label
+                    >
+                    <input
+                      type="text"
+                      id="asunto"
+                      class="form-control form-control-lg"
+                      placeholder="Automatización de ventas, desarrollo web, asesoramiento..."
+                    />
+                  </div>
+
+                  <div class="col-12">
+                    <label for="mensaje" class="form-label fw-semibold"
+                      >Mensaje <span class="text-danger">*</span></label
+                    >
+                    <textarea
+                      id="mensaje"
+                      class="form-control form-control-lg"
+                      rows="6"
+                      required
+                      placeholder="Contanos brevemente en qué podemos ayudarte."
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Por favor escribí tu mensaje.
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg px-5 shadow-sm"
+                    >
+                      Enviar consulta
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </main>
+
+          <!-- FOOTER -->
+          <footer class="bg-dark text-light text-center py-4">
+            <div class="container">
+              <img
+                src="../assets/logo.png"
+                alt="Logo GR"
+                class="logo-proyectos-footer mb-2"
+              />
+              <p class="mb-0 footer-copy">GR Soluciones Digitales</p>
+              <small>Todos los derechos reservados © 2025</small>
+            </div>
+          </footer>
         </div>
-      </nav>
-    </header>
 
-    <!-- CONTACTO -->
-    <main class="container py-5">
-      <section class="text-center mb-5">
-        <h1 class="text-primary fw-bold titulo-guia">Dejanos tu consulta</h1>
-        <p class="parrafo-guia">
-          Completá el formulario y nos pondremos en contacto con vos lo antes
-          posible.
-        </p>
-      </section>
-
-      <section>
-        <form action="#" method="POST" class="formulario-contacto" novalidate>
-          <div class="row g-4">
-            <div class="col-md-6">
-              <label for="nombre" class="form-label fw-semibold"
-                >Nombre y Apellido <span class="text-danger">*</span></label
-              >
-              <input
-                type="text"
-                id="nombre"
-                class="form-control form-control-lg"
-                required
-                autocomplete="name"
-              />
-              <div class="invalid-feedback">
-                Por favor ingresá tu nombre completo.
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <label for="telefono" class="form-label fw-semibold"
-                >Teléfono (opcional)</label
-              >
-              <input
-                type="tel"
-                id="telefono"
-                class="form-control form-control-lg"
-                autocomplete="tel"
-              />
-            </div>
-
-            <div class="col-md-6">
-              <label for="email" class="form-label fw-semibold"
-                >Correo electrónico <span class="text-danger">*</span></label
-              >
-              <input
-                type="email"
-                id="email"
-                class="form-control form-control-lg"
-                required
-                autocomplete="email"
-              />
-              <div class="invalid-feedback">
-                Por favor ingresá un email válido.
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <label for="rubro" class="form-label fw-semibold"
-                >Rubro o tipo de negocio</label
-              >
-              <input
-                type="text"
-                id="rubro"
-                class="form-control form-control-lg"
-              />
-            </div>
-
-            <div class="col-md-6">
-              <label for="provincia" class="form-label fw-semibold"
-                >Provincia</label
-              >
-              <input
-                type="text"
-                id="provincia"
-                class="form-control form-control-lg"
-              />
-            </div>
-
-            <div class="col-12">
-              <label for="asunto" class="form-label fw-semibold"
-                >Asunto de la consulta</label
-              >
-              <input
-                type="text"
-                id="asunto"
-                class="form-control form-control-lg"
-                placeholder="Automatización de ventas, desarrollo web, asesoramiento..."
-              />
-            </div>
-
-            <div class="col-12">
-              <label for="mensaje" class="form-label fw-semibold"
-                >Mensaje <span class="text-danger">*</span></label
-              >
-              <textarea
-                id="mensaje"
-                class="form-control form-control-lg"
-                rows="6"
-                required
-                placeholder="Contanos brevemente en qué podemos ayudarte."
-              ></textarea>
-              <div class="invalid-feedback">Por favor escribí tu mensaje.</div>
-            </div>
-
-            <div class="col-12 text-center">
-              <button
-                type="submit"
-                class="btn btn-primary btn-lg px-5 shadow-sm"
-              >
-                Enviar consulta
-              </button>
-            </div>
-          </div>
-        </form>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-light text-center py-4">
-      <div class="container">
-        <img
-          src="../assets/logo.png"
-          alt="Logo GR"
-          class="logo-proyectos-footer mb-2"
-        />
-        <p class="mb-0 footer-copy">GR Soluciones Digitales</p>
-        <small>Todos los derechos reservados © 2025</small>
+        <!-- Columna derecha: imagen hero -->
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="hero-lateral"></div>
+        </div>
       </div>
-    </footer>
+    </div>
+
     <!-- WhatsApp -->
     <a
       href="https://wa.me/5493515524067"
