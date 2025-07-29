@@ -956,3 +956,7 @@ form .form-select:focus {
     margin-top: 24px;
   }
 }
+
+.whatsapp-float {
+  position: sticky;
+}
